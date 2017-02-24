@@ -1,0 +1,121 @@
+
+
+body{
+	background-image: url("../resource/upfeathers.png");
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+}
+
+h1{
+	font-size: 4em;
+	font-family: Impact, Verdana, Sans-serif;
+	text-align: center;
+}
+
+p{
+	font-size: 1.1em;
+	text-align: center;
+}
+
+/*Första sidan*/
+.firstSection{
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+
+.firstParagraph{
+	margin-top: -5%;
+}
+
+
+.firstFig{
+	margin-top: 0%;
+	padding-top: 0%;
+	padding-left: 31%;
+}
+
+.firstImg{
+	border-radius: 20px;
+	border-style: solid;
+}
+/*Slut på första sidan*/
+
+/*Andra sidan*/
+
+.secondH2{
+	margin-left: 10%;
+
+}
+
+.secondH3{
+	margin-left: 10%;
+	font-size:1.3em;
+
+}
+
+.secondMain{
+	width: 30%;
+	padding-right: 30%;
+	margin: 0px; 	
+	float: right;
+	/*border-style: solid;*/
+}
+
+ol>li, ul>li{
+	font-size: 1.1em;
+}
+
+.secondAside{
+	margin-left: 10%;
+	margin-top: 0px;
+	width: 20%;
+	height: 36%;
+	position: absolute;
+	/*overflow: hidden;*/
+	/*border-style: solid;*/
+	float: left;
+}
+
+.label{
+	margin-left: 10%;
+	font-size: 1.1em;
+}
+
+.starSection{
+	font-size:400%;
+	color:grey;
+	overflow: hidden;
+	position: relative;
+	bottom: -20%;
+	width: 100%;
+	/*height: 3%;*/
+	/*padding: 15px 9px 15px 0px;*/	
+	text-align: center;
+	/*border-style: solid;	*/
+	/*display: inline-block;*/
+
+}
+
+/*.starSection>label:hover{
+	font-size: 150%;
+	color: blue;
+}*/
+
+.star:hover{
+	/*font-size: 150%;*/
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
