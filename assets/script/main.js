@@ -42,7 +42,7 @@ function checkPN(e) {
 				}
 			}
 		}
-		if (sum % 10) {
+		if (sum % 10 === 0) {
 			return document.getElementById("idNumberResult").innerHTML = "Valid";
 		} 
 		else {
@@ -61,7 +61,7 @@ function checkPN(e) {
 	   var value = document.getElementById("leapYear").value;
 	
 	   var isLeapYear = ((value % 4 === 0) && (value % 100 !== 0) ||
-			(value % 400 == 0));
+			(value % 400 === 0));
 
        if(isLeapYear){
        	return document.getElementById("leapYearResult").innerHTML = value + " is a leap year.";
