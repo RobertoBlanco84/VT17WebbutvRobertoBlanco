@@ -34,11 +34,18 @@ p{
 	margin-top: 0%;
 	padding-top: 0%;
 	padding-left: 31%;
+	position: relative;
 }
 
 .firstImg{
 	border-radius: 20px;
 	border-style: solid;
+}
+
+.firstFooter > p{
+	margin-left: 30%;
+	margin-right: 25%;
+
 }
 /*Slut på första sidan*/
 
@@ -60,16 +67,15 @@ p{
 	padding-right: 30%;
 	margin: 0px; 	
 	float: right;
-	/*border-style: solid;*/
 }
 
-ol>li, ul>li{
+ol > li, ul > li{
 	font-size: 1.1em;
 }
 
 .secondAside{
 	margin-left: 10%;
-	margin-top: 0px;
+	margin-top: 0%;
 	width: 20%;
 	height: 36%;
 	position: absolute;
@@ -83,30 +89,144 @@ ol>li, ul>li{
 	font-size: 1.1em;
 }
 
-.starSection{
+.select{
+	margin-top: 0%;
+	margin-left: 10%;
+}
+
+/*
+.rateSection{
 	font-size:400%;
 	color:grey;
 	overflow: hidden;
 	position: relative;
-	bottom: -20%;
+	bottom: -30%;
 	width: 100%;
 	/*height: 3%;*/
 	/*padding: 15px 9px 15px 0px;*/	
-	text-align: center;
-	/*border-style: solid;	*/
-	/*display: inline-block;*/
-
-}
-
-/*.starSection>label:hover{
-	font-size: 150%;
-	color: blue;
+	/*text-align: center;
+	/*content: "\2605"; star*/
+	/*border-style: solid;	*/	
+	/*display: inline-block;
+}*/
+/*
+.star{
+	font-size: 120%;
+	color: red;
 }*/
 
-.star:hover{
-	/*font-size: 150%;*/
-	color: blue;
+.divRate {
+	/*float: right;
+	width: 20%;
+	height: 50%;
+	margin-right: -21%;
+	margin-top: 25%;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 20px;*/
+	float: left;
+	width: 20%;
+	height: 20%;
+	text-align: center;
+	margin-left: 67%;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 20px;
+
 }
+
+
+/*Delar av kod lånad från: http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/ */
+.rating {
+   float:right;
+   margin-right: 38%;
+   border-style: none;
+}
+
+.rating > input {
+    position: relative;
+    float: left;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    /*overflow:hidden;*/
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:300%;
+    line-height:1.2;
+    /*color:#ddd;*/
+    color:#FFFFFF;
+    /*text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);*/
+}
+
+.rating > label:before {
+    content: '★ ';
+}
+
+.rating > input ~ label {
+    /*color: #f70;*/
+    color: red;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+/*
+.rating > label:hover,
+.rating > label:hover ~ label {
+    /*color: gold;*/
+    /*color: hotpink;*/
+    /*text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}*/
+
+.rating > input + label:hover,
+.rating > input + label:hover ~ label,
+.rating > input  ~ label:hover,
+.rating > input ~ label:hover ~ label,
+.rating > label:hover ~ input ~ label {
+    /*color: #ea0;*/
+    color: green;
+    /*text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);*/
+} 
+
+/*Slut på lånad kod*/
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.divAPI > a{
+	font-size: 1.1em;
+	float: left;
+	margin-top: 1.4%;
+	margin-left: 10%;
+	color: black;
+}
+
+
+
+#api{
+	text-align: center;
+	float: right;
+	margin-right: 35%;
+
+
+}
+#loadingImg{
+	margin-left: -80%;
+	border-style: solid;
+	border-radius: 20px;
+}
+
+
+
+
+
 
 
 

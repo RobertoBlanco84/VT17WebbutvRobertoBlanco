@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
-<meta charset="utf-8">
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../style/kladdkaka.css">
 	<title>Uppgift 7</title>
 </head>
@@ -24,32 +24,45 @@
 <h2 class="secondH2">Ingredienser</h2>
 	<label class="label">Antal bitar</label>
 	<br>
-	<input type="number" id="amount" class="ingredient__input">
+	<form>
+		<select class="select" id="amount" onchange="amountFunction()">
+			<option value="14">14</option>
+			<option value="12">12</option>
+			<option value="10">10</option>
+			<option value="8">8</option>
+			<option value="6">6</option>
+			<option value="4">4</option>
+			<option value="2">2</option>
+		</select>
+	</form>
 	<ul>
-		<label class="ingredient__amount">
-		<li><span  id="butter">150</span> g smör</li>
-		<li><span  id="eggs">3</span> ägg</li>
-		<li><span  id="suger">3</span> dl strösocker</li>
-		<li><span  id="flour">2</span> dl vetemjöl</li>
-		<li><span  id="cocoa">1</span> dl kakao</li>
-		<li><span  id="vanillaSuger">1</span> msk vaniljsocker</li>
-		<li><span  id="salt">2</span> krm salt</li>
-		</label>
+		<li><span id="butter">140</span> g smör</li>
+		<li><span id="eggs">2,8</span> ägg</li>
+		<li><span id="suger">4,2</span> dl strösocker</li>
+		<li><span id="flour">2,8</span> dl vetemjöl</li>
+		<li><span id="cocoa">1,4</span> dl kakao</li>
+		<li><span id="vanillaSuger">1,4</span> msk vaniljsocker</li>
+		<li><span id="salt">1,4</span> krm salt</li>
 	</ul>
 </aside>
+<section class="rating">
+    <input class="stars" type="radio" id="star5" value="5" onclick="update(5);" /><label for="star5" title="Fem Stjärnor"></label>
 
-<section class="starSection">
-<label>
-	<span class="star" id="star">&bigstar;</span>
-	<span class="star" id="star">&bigstar;</span>
-	<span class="star" id="star">&bigstar;</span>
-	<span class="star" id="star">&bigstar;</span>
-	<span class="star" id="star">&bigstar;</span>
-</label>
-</section>
-<footer>
-	<p>Sätt gärna ett betyg på receptet</p>
-</footer>
+    <input class="stars" type="radio" id="star4" value="4" onclick="update(4);" /><label for="star4" title="Fyra Stjärnor"></label>
+
+    <input class="stars" type="radio" id="star3" value="3" onclick="update(3);"/><label for="star3" title="Tre Stjärnor"></label>
+
+    <input class="stars" type="radio" id="star2" value="2" onclick="update(2);"/><label for="star2" title="Två Stjärnor"></label>
+
+    <input class="stars" type="radio" id="star1" value="1" onclick="update(1);"/><label for="star1" title="En Stjärna"></label>
+    <h3 class="divRate">Sätt gärna ett betyg på receptet</h3>
+</section> 
+<div class="divAPI">
+	<p id="api">
+	<img id='loadingImg' src="../resource/giphy.gif" alt="Loading" width="200" height="200">
+	</p>
+	<a href="uppgift7.html">Tillbaka till första sidan</a>
+</div>
 <script type="text/javascript" src="../script/kladdkaka.js"></script>
 </body>
 </html>
